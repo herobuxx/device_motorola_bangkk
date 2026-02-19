@@ -247,7 +247,7 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # MotCamera3
-product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
+product/app/MotCamera3AI/MotCamera3AI.apk;OVERRIDES=Camera2,Aperture;PRESIGNED
 product/etc/permissions/com.motorola.camera3.xml
 product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
 product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
