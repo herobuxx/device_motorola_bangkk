@@ -51,18 +51,13 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
-extract_fns: extract_fns_user_type = {
-    r'(bootloader|radio)\.img': extract_star_firmware,
-}
-
 module = ExtractUtilsModule(
     'bangkk',
     'motorola',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
-    extract_fns=extract_fns,
-    add_firmware_proprietary_file=True,
+    add_firmware_proprietary_file=False,
     add_generated_carriersettings=True,
 )
 
